@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Performance Précis (P Cube)</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<style>
+		#container {
+			width: 1100px;
+			margin: 0 auto;
+		}
+		.list-group, table {
+			box-shadow: 0 2px 4px 0 #888888;
+		}
+		#performance-table, #file-list-table {
+			width:100%;
+			word-break:break-word;
+			cursor: pointer;
+		}
+		#performance-table td:nth-of-type(1) {
+			width: 7.5%;
+		}
+		#performance-table td:nth-of-type(2) {
+			width: 7.5%;
+		}
+		#performance-table td:nth-of-type(3) {
+			width: 27.5%;
+		}
+		#performance-table td:nth-of-type(4) {
+			width: 27.5%;
+		}
+		#performance-table td:nth-of-type(5) {
+			width: 30%;
+		}
+		#file-list-table td:nth-of-type(1) {
+			width: 10%;
+		}
+		#file-list-table td:nth-of-type(2) {
+			width: 10%;
+		}
+		#file-list-table td:nth-of-type(3) {
+			width: 15%;
+		}
+		#file-list-table td:nth-of-type(4) {
+			width: 65%;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<h1 class="text-center">Page Performance Précis (P Cube)</h1>
+	<ul class="list-group">
+		<!-- <li id="page-size" class="list-group-item"></li> -->
+		<li id="page-score" class="list-group-item"></li>
+		<li id="page-url" class="list-group-item"></li>
+		<li id="page-requests" class="list-group-item"></li>
+		<!-- <li id="page-load" class="list-group-item"></li> -->
+	</ul>
+	<h1 class="text-center">Critical Issues</h1>
+	<table id="performance-table" class="table table-hover table-bordered">
+		<tr class="info">
+			<th>Title</th>
+			<th>Severity</th>
+			<th>Issue</th>
+			<th>Solution</th>
+			<th>Affected Files</th>
+		</tr>
+	</table>
+
+	<h1 class="text-center">Critical files</h1>
+	<table id="critcal-file-table" class="table table-hover table-bordered">
+		<tr class="info">
+			<th>Issue</th>
+			<th>Suggestion</th>
+			<th>File List</th>
+		</tr>
+	</table>
+
+	<h1 class="text-center">Additional performance enhancement suggestions</h1>
+	<table id="non-critical-table" class="table table-hover table-bordered">
+		<tr class="info">
+			<th>Title</th>
+			<th>Severity</th>
+			<th>Suggestion</th>
+		</tr>
+	</table>
+
+	<h1 class="text-center">Affected file list</h1>
+	<table id="file-list-table" class="table table-hover table-bordered">
+		<tr class="info">
+			<th>Title</th>
+			<th>Severity</th>
+			<th>Issue</th>
+			<th>Affected files</th>
+		</tr>
+	</table>
+</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
